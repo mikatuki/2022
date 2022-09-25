@@ -1,0 +1,48 @@
+#hotch_top_img {
+  background-image: url("../img/IMG_9136.JPG");
+}
+
+#shiraito_top_img {
+  background-image: url("../img/IMG_9143.JPG");
+}
+
+#france_top_img{
+  background-image: url("../img/IMG_9160.JPG");
+}
+
+#plaza_top_img {
+  background-image: url("../img/IMG_9174.JPG");
+}
+
+.plaza {
+  width: 19vw;
+  border: solid 2px #B7E1F7;
+}
+
+.otoya {
+  border-color: #E42932;
+}
+
+.natuki {
+  border-color: #EC6D1C;
+}
+
+.ren {
+  border-color: #FBC73F;
+}
+
+.tokiya {
+  border-color: #513F89;
+}
+
+.sehil {
+  border-color: #9EC62F;
+}
+
+.syo {
+  border-color: #E86378;
+}
+
+.masato {
+  border-color: #315BA5;
+}

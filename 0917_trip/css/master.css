@@ -1,0 +1,290 @@
+@media screen and (max-width: 700px){
+  .pc {
+      display: none;
+   }
+}
+@media screen and (min-width: 701px){
+  .sp {
+      display: none;
+   }
+
+}
+
+html{
+    /* フォントサイズ 1rem=10px */
+    font-size: 62.5%;
+}
+
+body {
+  width: 80vw;
+  margin: auto;
+  font-family: "Sawarabi Mincho";
+}
+
+/* ハンバーガーメニュー */
+.nav_toggle {
+  position: relative;
+  width: 1.75rem;
+  height: 1.5rem;
+  margin: 0 0 0 auto;
+}
+.nav_toggle i {
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  position: absolute;
+  transition: transform .5s, opacity .5s;
+}
+.nav_toggle i:nth-child(1) {
+  top: 0;
+}
+.nav_toggle i:nth-child(2) {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.nav_toggle i:nth-child(3) {
+  bottom: 0;
+}
+
+.nav_toggle.show i:nth-child(1) {
+  transform: translateY(10px) rotate(-45deg);
+}
+.nav_toggle.show i:nth-child(2) {
+  opacity: 0;
+}
+.nav_toggle.show i:nth-child(3) {
+  transform: translateY(-12px) rotate(45deg);
+}
+
+.nav.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav {
+  position: fixed;
+  top: 3rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .5s, visibility .5s;
+}
+
+/* PC用メニュー */
+.menu {
+  /* padding: 0 10%; */
+  font-size: 1.6rem;
+}
+.menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.menu li {
+  width: 20%;
+  text-align: center;
+}
+
+/* topページ */
+.index_top{
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  /* width: 80vw;
+  margin: 0 auto; */
+  margin-bottom: 3%;
+}
+
+.index_top div {
+  width: 50%;
+}
+
+.index_top_title {
+  font-family: 'Rampart One', cursive;
+  font-style: italic;
+  font-size: 7rem;
+  color: #A2D0C1;
+}
+
+.root {
+  /* width: 80vw;
+  margin: auto; */
+}
+
+.root_title {
+  text-align: center;
+  color: #A2D0C1;
+  font-size: 3rem;
+}
+
+.root_box{
+  font-size: 1.5rem;
+  position: relative;
+}
+.root_box::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 30px;
+    bottom: 0;
+    left: 1.5rem;
+    width: 6px;
+    background: #214151;
+}
+
+.root_box_textbox {
+  margin-left: 4rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.root_box_img {
+  width: 30%;
+  padding: 1rem 0;
+}
+
+.root_box_text {
+  width: 70%;
+  padding: 2rem;
+}
+
+.notImg {
+  width: 100%;
+}
+
+.spot {
+  display: flex;
+  /* width: 80vw; */
+  justify-content: space-around;
+  align-items: center;
+  margin: 3% auto;
+}
+
+.spot_card {
+  text-align: center;
+  width: 23%;
+}
+.spot_card:hover {
+  opacity: 0.8;
+}
+
+footer {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.top_title{
+  font-size: 5rem;
+  color: #A2D0C1;
+  text-align: center;
+  margin:8vh 0;
+}
+
+.top_img {
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.explanation{
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 3vh 0;
+}
+
+.chekpoint {
+  margin: 10vh 0;
+}
+
+.chekpoint_box {
+  display: flex;
+  font-size: 1.2rem;
+  justify-content: space-between;
+
+}
+
+.chekpoint_card {
+  width: 26vw;
+  margin-bottom: 3vh;
+  padding: 1vw;
+  border-radius: 5px;
+  background-color: #FFEEAF;
+}
+
+.chekpoint_img{
+  margin: 0;
+  margin-bottom: 1.2rem;
+  height: 20vw;
+}
+
+.chekpoint_img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.next {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.next_btn {
+  margin-top: 1.6rem;
+}
+
+.next_btn a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  width: 40vw;
+  color: #2285b1;
+  font-size: 1.8rem;
+  font-weight: 700;
+  border: 3px solid #a0c4d3;
+  border-radius: 10px;
+}
+
+.next_btn a::after {
+  content: '';
+  width: 1rem;
+  height: 1rem;
+  border-top: 3px solid #2285b1;
+  border-right: 3px solid #2285b1;
+  transform: rotate(45deg);
+}
+
+.next_btn a:hover {
+  color: #333333;
+  text-decoration: none;
+  background-color: #a0c4d3;
+}
+
+.next_btn a:hover::after {
+  border-top: 3px solid #333333;
+  border-right: 3px solid #333333;
+}
+
+.back {
+  font-size: 1.4rem;
+  position: relative;
+}
+
+.back::before {
+  position: absolute;
+  content: '';
+  width: 1rem;
+  height: 1rem;
+  top: 5px;
+  left: -13px;
+  border-top: 3px solid ;
+  border-left: 3px solid ;
+  transform: rotate(-45deg);
+}
