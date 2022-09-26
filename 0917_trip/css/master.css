@@ -81,7 +81,7 @@ body {
 }
 .menu ul {
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: center;
   padding: 0;
 }
@@ -89,6 +89,24 @@ body {
 .menu li {
   width: 20%;
   text-align: center;
+  position: relative;
+}
+
+.menu li::after {
+  position: absolute;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #214151;
+  bottom: -1px;               /*アンダーラインがaタグの下端から現れる*/
+  transform: scale(0, 1);     /*アンダーラインの縮尺比率。ホバー前はx方向に0*/
+  transform-origin: left top; /*変形（アンダーラインの伸長）の原点がaタグ（各メニュー）の左端*/
+  transition: transform 0.3s; /*変形の時間*/
+}
+
+.menu li:hover::after {
+  transform: scale(1, 1);     /*ホバー後、x軸方向に1（相対値）伸長*/
 }
 
 /* topページ */
@@ -110,11 +128,6 @@ body {
   font-style: italic;
   font-size: 7rem;
   color: #A2D0C1;
-}
-
-.root {
-  /* width: 80vw;
-  margin: auto; */
 }
 
 .root_title {
