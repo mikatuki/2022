@@ -1,24 +1,23 @@
-@media screen and (max-width: 700px){
-  .pc {
-      display: none;
-   }
-}
-@media screen and (min-width: 701px){
+@media screen and (min-width: 701px) {
   .sp {
-      display: none;
-   }
-
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  .pc {
+    display: none;
+  }
 }
 
-html{
-    /* フォントサイズ 1rem=10px */
-    font-size: 62.5%;
+html {
+  /* フォントサイズ 1rem=10px */
+  font-size: 62.5%;
 }
 
 body {
   width: 80vw;
   margin: auto;
-  font-family: "Sawarabi Mincho";
+  font-family: 'Sawarabi Mincho';
 }
 
 /* ハンバーガーメニュー */
@@ -33,7 +32,7 @@ body {
   height: 2px;
   background-color: #333;
   position: absolute;
-  transition: transform .5s, opacity .5s;
+  transition: transform 0.5s, opacity 0.5s;
 }
 .nav_toggle i:nth-child(1) {
   top: 0;
@@ -71,7 +70,7 @@ body {
   padding: 1rem;
   opacity: 0;
   visibility: hidden;
-  transition: opacity .5s, visibility .5s;
+  transition: opacity 0.5s, visibility 0.5s;
 }
 
 /* PC用メニュー */
@@ -99,18 +98,18 @@ body {
   width: 100%;
   height: 2px;
   background: #214151;
-  bottom: -1px;               /*アンダーラインがaタグの下端から現れる*/
-  transform: scale(0, 1);     /*アンダーラインの縮尺比率。ホバー前はx方向に0*/
+  bottom: -1px; /*アンダーラインがaタグの下端から現れる*/
+  transform: scale(0, 1); /*アンダーラインの縮尺比率。ホバー前はx方向に0*/
   transform-origin: left top; /*変形（アンダーラインの伸長）の原点がaタグ（各メニュー）の左端*/
   transition: transform 0.3s; /*変形の時間*/
 }
 
 .menu li:hover::after {
-  transform: scale(1, 1);     /*ホバー後、x軸方向に1（相対値）伸長*/
+  transform: scale(1, 1); /*ホバー後、x軸方向に1（相対値）伸長*/
 }
 
 /* topページ */
-.index_top{
+.index_top {
   display: flex;
   justify-content: space-around;
   align-items: end;
@@ -127,28 +126,28 @@ body {
   font-family: 'Rampart One', cursive;
   font-style: italic;
   font-size: 7rem;
-  color: #A2D0C1;
+  color: #a2d0c1;
 }
 
 .root_title {
   text-align: center;
-  color: #A2D0C1;
+  color: #a2d0c1;
   font-size: 3rem;
 }
 
-.root_box{
+.root_box {
   font-size: 1.5rem;
   position: relative;
 }
-.root_box::before{
-    content: "";
-    display: block;
-    position: absolute;
-    top: 30px;
-    bottom: 0;
-    left: 1.5rem;
-    width: 6px;
-    background: #214151;
+.root_box::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 30px;
+  bottom: 0;
+  left: 1.5rem;
+  width: 6px;
+  background: #214151;
 }
 
 .root_box_textbox {
@@ -192,11 +191,11 @@ footer {
   text-align: center;
 }
 
-.top_title{
+.top_title {
   font-size: 5rem;
-  color: #A2D0C1;
+  color: #a2d0c1;
   text-align: center;
-  margin:8vh 0;
+  margin: 8vh 0;
 }
 
 .top_img {
@@ -205,7 +204,7 @@ footer {
   background-position: center;
 }
 
-.explanation{
+.explanation {
   font-size: 1.6rem;
   text-align: center;
   margin: 3vh 0;
@@ -219,7 +218,6 @@ footer {
   display: flex;
   font-size: 1.2rem;
   justify-content: space-between;
-
 }
 
 .chekpoint_card {
@@ -227,16 +225,16 @@ footer {
   margin-bottom: 3vh;
   padding: 1vw;
   border-radius: 5px;
-  background-color: #FFEEAF;
+  background-color: #ffeeaf;
 }
 
-.chekpoint_img{
+.chekpoint_img {
   margin: 0;
   margin-bottom: 1.2rem;
   height: 20vw;
 }
 
-.chekpoint_img img{
+.chekpoint_img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -297,7 +295,7 @@ footer {
   height: 1rem;
   top: 5px;
   left: -13px;
-  border-top: 3px solid ;
-  border-left: 3px solid ;
+  border-top: 3px solid;
+  border-left: 3px solid;
   transform: rotate(-45deg);
 }
