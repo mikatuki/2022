@@ -35,6 +35,14 @@
     display: flex;
     justify-content: space-between;
   }
+
+  .chekpoint_card {
+    width: 26vw;
+  }
+
+  .chekpoint_img {
+    height: 20vw;
+  }
 }
 /* 携帯用 */
 @media screen and (max-width: 700px) {
@@ -243,13 +251,13 @@ footer {
 }
 
 .explanation {
-  font-size: 1.6rem;
-  text-align: center;
+  font-size: 1.5rem;
+  /* text-align: center; */
   margin: 3vh 0;
 }
 
 .chekpoint {
-  margin: 10vh 0 5vh;
+  margin: 5vh 0;
 }
 
 .chekpoint_box {
@@ -257,7 +265,6 @@ footer {
 }
 
 .chekpoint_card {
-  width: 26vw;
   margin-bottom: 3vh;
   padding: 1vw;
   border-radius: 5px;
@@ -267,7 +274,6 @@ footer {
 .chekpoint_img {
   margin: 0;
   margin-bottom: 1.2rem;
-  height: 20vw;
 }
 
 .chekpoint_img img {
@@ -277,7 +283,7 @@ footer {
 }
 
 .next {
-  text-align: center;
+  /* text-align: center; */
   font-size: 1.6rem;
 }
 

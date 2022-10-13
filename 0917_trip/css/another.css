@@ -1,48 +1,54 @@
+@media screen and (min-width: 701px) {
+  .plaza {
+    width: 19vw;
+  }
+}
+
 #hotch_top_img {
-  background-image: url("../img/IMG_9136.JPG");
+  background-image: url('../img/IMG_9136.JPG');
 }
 
 #shiraito_top_img {
-  background-image: url("../img/IMG_9143.JPG");
+  background-image: url('../img/IMG_9143.JPG');
 }
 
-#france_top_img{
-  background-image: url("../img/IMG_9160.JPG");
+#france_top_img {
+  background-image: url('../img/IMG_9160.JPG');
 }
 
 #plaza_top_img {
-  background-image: url("../img/IMG_9174.JPG");
+  background-image: url('../img/IMG_9174.JPG');
 }
 
 .plaza {
-  width: 19vw;
-  border: solid 2px #B7E1F7;
+  /* width: 19vw; */
+  border: solid 2px #b7e1f7;
 }
 
 .otoya {
-  border-color: #E42932;
+  border-color: #e42932;
 }
 
 .natuki {
-  border-color: #EC6D1C;
+  border-color: #ec6d1c;
 }
 
 .ren {
-  border-color: #FBC73F;
+  border-color: #fbc73f;
 }
 
 .tokiya {
-  border-color: #513F89;
+  border-color: #513f89;
 }
 
 .sehil {
-  border-color: #9EC62F;
+  border-color: #9ec62f;
 }
 
 .syo {
-  border-color: #E86378;
+  border-color: #e86378;
 }
 
 .masato {
-  border-color: #315BA5;
+  border-color: #315ba5;
 }
