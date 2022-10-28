@@ -1,0 +1,91 @@
+@media screen and (min-width: 701px) {
+  .body2 {
+    width: 60vw;
+    margin: auto;
+    background-color: rgba(114, 192, 240, 0.5);
+  }
+}
+
+html {
+  /* 1rem=10px */
+  font-size: 62.5%;
+  font-family: 'Kaisei HarunoUmi', serif;
+}
+
+body {
+  text-align: center;
+  background-color: #fcfaf2;
+}
+
+.headerBox {
+  background-image: url(../img/shigaken.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 0.2rem 0;
+  -webkit-text-stroke: 1px #000;
+  text-stroke: 1px #000;
+}
+.headerBoxTitle {
+  font-size: 5rem;
+  color: rgba(82, 179, 240);
+}
+
+.MountTitle {
+  margin: 2rem 0;
+}
+
+.MountText1 {
+  padding: 0 5vw;
+  color: #919191;
+  margin-bottom: 2rem;
+}
+
+.MountText2 {
+  /* font-size: 3rem; */
+  color: #bdc0ba;
+  opacity: 0.8;
+  margin: 2rem 0;
+}
+
+.MountBox {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 0.5rem;
+  margin: 0 10vw;
+  background-color: rgba(178, 178, 92, 0.5);
+}
+
+.MountBox img {
+  width: 32%;
+}
+
+.Meat {
+  margin: 4rem 0;
+}
+
+.MeatTitle {
+  margin-bottom: 2rem;
+}
+
+.MeatBox {
+  margin: 0.5rem 0;
+  padding: 0 10vw;
+}
+
+.MeatBoxCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(145, 180, 147, 0.5);
+}
+
+.MeatBoxCard img {
+  width: 50%;
+}
+
+.MeatBoxCardText {
+  width: 50%;
+  padding: 0 1rem;
+  text-align: center;
+}
