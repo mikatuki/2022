@@ -1,0 +1,93 @@
+html {
+  /* フォントサイズ 1rem=10px */
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+}
+
+header {
+  width: 20%;
+  text-align: center;
+}
+
+main {
+  width: 80%;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+.top {
+  width: 100%;
+  margin: 0;
+  position: sticky;
+  top: 0;
+  z-index: 100000;
+  padding-top: 2rem;
+}
+
+.topImg {
+  width: 80%;
+  margin: auto;
+}
+.topImg img {
+  border-radius: 50%;
+}
+
+.topName {
+  margin-top: 1rem;
+}
+
+.headline {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+.headline:before {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  display: inline-block;
+  width: 60px;
+  height: 4px;
+  /* left: 50%; */
+  /* -webkit-transform: translateX(-50%);
+  transform: translateX(-50%); */
+  background-color: black;
+  border-radius: 2px;
+}
+
+.mainHead {
+  display: flex;
+}
+
+.language p {
+  text-indent: 1rem;
+  margin-bottom: 1rem;
+}
+.productBox {
+  display: flex;
+}
+
+.productCard {
+  width: 33%;
+  text-align: center;
+}
+
+.productCard img {
+  width: 80%;
+  height: 50%;
+  object-fit: contain;
+}
+
+.careerBox {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.carrerCard {
+  margin-left: 2rem;
+}
