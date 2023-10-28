@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>時間変更</title>
+  </head>
+  <body>
+    <div id="clock"></div>
+    <div class="a">
+      <div class="b">
+        <button type="button" class="buttonIcon" onclick="updateTime(10)">+10分</button>
+        <button type="button" class="buttonIcon" onclick="updateTime(20)">+20分</button>
+        <button type="button" class="buttonIcon" onclick="updateTime(30)">+30分</button>
+        <button type="button" class="buttonIcon" onclick="updateTime(60)">+60分</button>
+        <button type="button" class="buttonIcon" onclick="updateTime(90)">+90分</button>
+        <button type="button" class="buttonIcon" onclick="updateTime(120)">+120分</button>
+      </div>
+      <div>マイナス</div>
+      <div class="b">
+        <button type="button" onclick="adjustTime(-1)" class="buttonIcon">-1分</button>
+        <button type="button" onclick="adjustTime(-2)" class="buttonIcon">-2分</button>
+        <button type="button" onclick="adjustTime(-3)" class="buttonIcon">-3分</button>
+        <button type="button" onclick="adjustTime(-4)" class="buttonIcon">-4分</button>
+        <button type="button" onclick="adjustTime(-5)" class="buttonIcon">-5分</button>
+        
+      </div>
+      <div>プラス</div>
+      <div class="b">
+        <button type="button" onclick="adjustTime(1)" class="buttonIcon">1分</button>
+        <button type="button" onclick="adjustTime(2)" class="buttonIcon">2分</button>
+        <button type="button" onclick="adjustTime(3)" class="buttonIcon">3分</button>
+        <button type="button" onclick="adjustTime(4)" class="buttonIcon">4分</button>
+        <button type="button" onclick="adjustTime(5)" class="buttonIcon">5分</button>
+      </div>
+      <div>
+        <label for="minutes">任意追加：</label>
+        <input type="number" id="minutes" />
+        <button type="button" onclick="updateTime()" class="btn">更新</button>
+      </div>
+
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>

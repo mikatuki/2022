@@ -1,0 +1,57 @@
+body {
+  text-align: center;
+  width: 100%;
+}
+
+#clock {
+  font-size: 30vw;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+.a {
+  display: flex;
+  flex-direction: column;
+}
+
+.b {
+  display: flex;
+  justify-content: space-around;
+  margin: 1em;
+}
+
+button {
+  padding: 0;
+  font-family: inherit;
+  appearance: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+/* ボタンのスタイル */
+.buttonIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  aspect-ratio: 1;
+  background: linear-gradient(
+    135deg,
+    #c4d600 0%,
+    #c4d600 50%,
+    #e7308a 50%,
+    #e7308a 100%
+  );
+  border-radius: 50%;
+  color: #fffffb;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.btn {
+  border: 1px solid #666;
+  padding: 0.3em 1em;
+  border-radius: 5%;
+}
