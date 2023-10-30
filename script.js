@@ -28,8 +28,10 @@ function adjustTime(minute) {
 
   const minutes2 = minutes + minute;
 
-  if (minutes2 < 10) {
+   if (minutes2 < 10) {
     clocktext.textContent = `${hours}:0${minutes2}`;
+  } else if (minutes2 >= 60) {
+    clocktext.textContent = `${hours + 1}:0${minutes2 - 60}`;
   } else {
     clocktext.textContent = `${hours}:${minutes2}`;
   }
