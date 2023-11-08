@@ -6,37 +6,45 @@
   </head>
   <body>
     <div id="clock"></div>
+    <div class="choice_fullscreen">
+      <button type="button" onclick="clickfullscreen()" class="choice_fullscreen_btn">フルスクリーン表示</button>
+      <button type="button" onclick="clickexitfullscreen()" class="choice_fullscreen_btn">解除</button>  
+    </div>
     <div class="a">
-      <div class="b">
-        <button type="button" class="buttonIcon" onclick="updateTime(10)">+10分</button>
-        <button type="button" class="buttonIcon" onclick="updateTime(20)">+20分</button>
-        <button type="button" class="buttonIcon" onclick="updateTime(30)">+30分</button>
-        <button type="button" class="buttonIcon" onclick="updateTime(60)">+60分</button>
-        <button type="button" class="buttonIcon" onclick="updateTime(90)">+90分</button>
-        <button type="button" class="buttonIcon" onclick="updateTime(120)">+120分</button>
+      <div class="timepluss">
+        <button type="button" class="buttonIcon1" onclick="updateTime(10)">+10分</button>
+        <button type="button" class="buttonIcon1" onclick="updateTime(15)">+15分</button>
+        <button type="button" class="buttonIcon1" onclick="updateTime(20)">+20分</button>
+        <button type="button" class="buttonIcon1" onclick="updateTime(30)">+30分</button>
+        <button type="button" class="buttonIcon1" onclick="updateTime(60)">+60分</button>
+        <button type="button" class="buttonIcon1" onclick="updateTime(90)">+90分</button>
+        <button type="button" class="buttonIcon1" onclick="updateTime(120)">+120分</button>
       </div>
-      <div>マイナス</div>
-      <div class="b">
-        <button type="button" onclick="adjustTime(-1)" class="buttonIcon">-1分</button>
-        <button type="button" onclick="adjustTime(-2)" class="buttonIcon">-2分</button>
-        <button type="button" onclick="adjustTime(-3)" class="buttonIcon">-3分</button>
-        <button type="button" onclick="adjustTime(-4)" class="buttonIcon">-4分</button>
-        <button type="button" onclick="adjustTime(-5)" class="buttonIcon">-5分</button>
-        
+
+      <div>微調整</div>
+      <div class="timeadjustment">
+        <div class="timeadjustment_box">
+          <button type="button" onclick="adjustTime(-1)" class="buttonIcon2">-1分</button>
+          <button type="button" onclick="adjustTime(-2)" class="buttonIcon2">-2分</button>
+          <button type="button" onclick="adjustTime(-3)" class="buttonIcon2">-3分</button>
+          <button type="button" onclick="adjustTime(-4)" class="buttonIcon2">-4分</button>
+          <button type="button" onclick="adjustTime(-5)" class="buttonIcon2">-5分</button>   
+        </div>
+        <div class="timeadjustment_box">
+          <button type="button" onclick="adjustTime(1)" class="buttonIcon2">1分</button>
+          <button type="button" onclick="adjustTime(2)" class="buttonIcon2">2分</button>
+          <button type="button" onclick="adjustTime(3)" class="buttonIcon2">3分</button>
+          <button type="button" onclick="adjustTime(4)" class="buttonIcon2">4分</button>
+          <button type="button" onclick="adjustTime(5)" class="buttonIcon2">5分</button>
+        </div>  
       </div>
-      <div>プラス</div>
-      <div class="b">
-        <button type="button" onclick="adjustTime(1)" class="buttonIcon">1分</button>
-        <button type="button" onclick="adjustTime(2)" class="buttonIcon">2分</button>
-        <button type="button" onclick="adjustTime(3)" class="buttonIcon">3分</button>
-        <button type="button" onclick="adjustTime(4)" class="buttonIcon">4分</button>
-        <button type="button" onclick="adjustTime(5)" class="buttonIcon">5分</button>
-      </div>
+      <button class="now_time" type="button" onclick="updateTime()" class="btn">現在時刻を表示</button>
       <div>
         <label for="minutes">任意追加：</label>
-        <input type="number" id="minutes" />
-        <button type="button" onclick="updateTime()" class="btn">更新</button>
+        <input type="number" placeholder="任意のn分を入力" id="minutes" />
+        <button type="button" onclick="updateTime()" class="btn">変更！</button>
       </div>
+
 
     </form>
     <script src="script.js"></script>
