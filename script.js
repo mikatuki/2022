@@ -40,8 +40,12 @@ function adjustTime(minute) {
 // フルスクリーン表示
 function clickfullscreen() {
   const fullscreenTarget = document.getElementById('clock');
-  console.log(fullscreenTarget);
-  fullscreenTarget.requestFullscreen();
+  const isFullscreen = document.fullscreenElement;
+  if (isFullscreen) {
+    document.exitFullscreen();
+  } else {
+    fullscreenTarget.requestFullscreen();
+  }
 }
 
 // フルスクリーン解除
