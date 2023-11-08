@@ -39,7 +39,9 @@ function adjustTime(minute) {
 
 // フルスクリーン表示
 function clickfullscreen() {
-  document.documentElement.requestFullscreen();
+  const fullscreenTarget = document.getElementById('clock');
+  console.log(fullscreenTarget);
+  fullscreenTarget.requestFullscreen();
 }
 
 // フルスクリーン解除
