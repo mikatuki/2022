@@ -1,26 +1,4 @@
-body {
-  text-align: center;
-  width: 100%;
-}
-
-#clock {
-  font-size: 30vw;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 200px;
-}
-
-.a {
-  display: flex;
-  flex-direction: column;
-}
-
-.b {
-  display: flex;
-  justify-content: space-around;
-  margin: 1em;
-}
-
+/* リセット設定 */
 button {
   padding: 0;
   font-family: inherit;
@@ -30,28 +8,106 @@ button {
   border: none;
 }
 
+body {
+  text-align: center;
+  margin: 0;
+}
+
+#clock {
+  font-size: 30vw;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+.choice_fullscreen {
+  display: flex;
+  margin-bottom: 2em;
+}
+
+.choice_fullscreen_btn {
+  width: 50%;
+  padding: 0.5em;
+  color: #fffffb;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.choice_fullscreen_btn:nth-child(1) {
+  background: #c4d600;
+}
+
+.choice_fullscreen_btn:nth-child(2) {
+  background: #e7308a;
+}
+
+.a {
+  display: flex;
+  flex-direction: column;
+}
+
+.timepluss {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.timeadjustment {
+  display: flex;
+  margin-top: 1em;
+}
+
+.timeadjustment_box {
+  display: flex;
+  margin-right: 0;
+  justify-content: space-around;
+  width: 100%;
+}
+
 /* ボタンのスタイル */
-.buttonIcon {
+.buttonIcon1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12%;
+  aspect-ratio: 1;
+  /* border: solid 2px #c4d600; */
+  color: #000;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.buttonIcon1:nth-child(2n + 1) {
+  border: solid 2px #c4d600;
+}
+.buttonIcon1:nth-child(2n) {
+  border: solid 2px #e7308a;
+}
+
+.buttonIcon2 {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 80px;
   aspect-ratio: 1;
-  background: linear-gradient(
-    135deg,
-    #c4d600 0%,
-    #c4d600 50%,
-    #e7308a 50%,
-    #e7308a 100%
-  );
-  border-radius: 50%;
-  color: #fffffb;
+  border: solid 2px;
+  border-color: #c4d600 #e7308a #e7308a #c4d600;
+  color: #000;
   font-weight: bold;
   font-size: 1.3em;
 }
 
 .btn {
   border: 1px solid #666;
-  padding: 0.3em 1em;
+  padding: 0.1em 1em;
   border-radius: 5%;
+}
+
+.now_time {
+  margin: 2rem;
+  border: solid;
+  border-color: #c1c0c0;
+  padding: 1em;
+  font-weight: bold;
 }
