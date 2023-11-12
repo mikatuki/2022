@@ -13,11 +13,21 @@ body {
   margin: 0;
 }
 
+.clock_box {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #clock {
+  overflow-x: hidden;
   font-size: 30vw;
   font-weight: bold;
   text-align: center;
   background-color: #ffffff;
+  margin: 0;
 }
 
 .choice_fullscreen {
