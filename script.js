@@ -3,6 +3,7 @@ window.addEventListener('DOMContentLoaded', () => {
   updateTime(0);
 });
 
+// 現在時刻プラス表示
 function updateTime(minutesToAdd) {
   if (minutesToAdd === undefined) {
     minutesToAdd = parseInt(document.getElementById('minutes').value, 10) || 0; // 入力が数字でない場合は0として扱う
@@ -21,6 +22,7 @@ function updateTime(minutesToAdd) {
   }
 }
 
+//微調整エリア
 function adjustTime(minute) {
   const clocktext = document.getElementById('clock');
   const hours = parseFloat(clocktext.textContent.slice(0, 2));
@@ -28,9 +30,14 @@ function adjustTime(minute) {
 
   const minutes2 = minutes + minute;
 
-  if (minutes2 < 10) {
+  if (minutes2 < 0) {
+    //0分を下回った時に時間を下げる
+    clocktext.textContent = `${hours - 1}:${60 + minutes2}`;
+  } else if (minutes2 < 10) {
+    // 10分以下だったら、数字の前に0を表示する
     clocktext.textContent = `${hours}:0${minutes2}`;
   } else if (minutes2 >= 60) {
+    //60分を超えた時に時間を上げる
     clocktext.textContent = `${hours + 1}:0${minutes2 - 60}`;
   } else {
     clocktext.textContent = `${hours}:${minutes2}`;
@@ -46,9 +53,4 @@ function clickfullscreen() {
   } else {
     fullscreenTarget.requestFullscreen();
   }
-}
-
-// フルスクリーン解除
-function clickexitfullscreen() {
-  document.exitFullscreen();
 }
